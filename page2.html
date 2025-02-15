@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2 - LED</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>État de la LED</h1>
+    <p>LED : {{led_state}}</p>
+    <button onclick="toggleLED()">Basculer LED</button>
+    <a href="page1.html"><button>Retour à la Page Capteur</button></a>
+
+    <script>
+        function toggleLED() { 
+            fetch('/toggle_led').then(() => location.reload()); 
+        }
+    </script>
+</body>
+</html>
