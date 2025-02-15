@@ -4,9 +4,10 @@
 #include <string>
 #include <netinet/in.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 // Variables simulant les capteurs
-int sensor_value = 42;
+int sensor_value = std::rand() % 100;
 bool led_state = false;
 
 // Fonction pour lire un fichier (HTML ou CSS)
@@ -33,38 +34,46 @@ void handle_request(int client_socket) {
     std::string request(buffer);
     std::cout << "Requête reçue :\n" << request << std::endl;
 
-    std::string filename = "page1.html"; // Par défaut, on sert page1.html
-    std::string content_type = "text/html"; // Type de fichier
+    std::string filename = "page1.html";
+    std::string content_type = "text/html";
 
     if (request.find("GET /page2.html") != std::string::npos) {
         filename = "page2.html";
     } else if (request.find("GET /main.css") != std::string::npos) {
         filename = "main.css";
         content_type = "text/css";
+    } else if (request.find("GET /page3.html") != std::string::npos) {
+        filename = "page3.html";
     } else if (request.find("GET /toggle_led") != std::string::npos) {
         led_state = !led_state;
         std::cout << "LED basculée : " << (led_state ? "Allumée" : "Éteinte") << std::endl;
-        filename = "page2.html"; // Redirige vers page2
+        filename = "page2.html"; 
+    } else if (request.find("GET /sensor_data") != std::string::npos) {
+        // Envoyer des données JSON pour le graphique
+        std::string json_response = "{ \"sensor_value\": " + std::to_string(std::rand() % 100) + " }";
+        std::string response = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n" + json_response;
+        send(client_socket, response.c_str(), response.size(), 0);
+        close(client_socket);
+        return;
     }
 
     std::string content = read_file(filename);
 
-    // Remplacement des valeurs dynamiques (si c'est un fichier HTML)
     if (content_type == "text/html") {
         size_t pos;
         while ((pos = content.find("{{sensor_value}}")) != std::string::npos) {
-            content.replace(pos, std::string("{{sensor_value}}").length(), std::to_string(sensor_value));
+            content.replace(pos, std::string("{{sensor_value}}").length(), std::to_string(std::rand() % 100));
         }
         while ((pos = content.find("{{led_state}}")) != std::string::npos) {
             content.replace(pos, std::string("{{led_state}}").length(), led_state ? "Allumée" : "Éteinte");
         }
     }
 
-
     std::string response = "HTTP/1.1 200 OK\r\nContent-Type: " + content_type + "\r\n\r\n" + content;
     send(client_socket, response.c_str(), response.size(), 0);
     close(client_socket);
 }
+
 
 int main() {
     int server_fd, new_socket;

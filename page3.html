@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 3 - Graphique</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Graphique des données du capteur</h1>
+    <canvas id="sensorChart"></canvas>
+    <p>Valeur actuelle : <span id="sensorValue">{{sensor_value}}</span></p>
+
+    <a href="page1.html"><button>Retour page capteur</button></a>
+    <a href="page2.html"><button>Page LED</button></a>
+
+    <script>
+        let ctx = document.getElementById('sensorChart').getContext('2d');
+        let sensorChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Valeur du Capteur',
+                    data: [],
+                    borderColor: 'blue',
+                    borderWidth: 2,
+                    fill: false
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { display: true },
+                    y: { display: true, min: 0, max: 100 }
+                }
+            }
+        });
+
+        function fetchSensorData() {
+            fetch('/sensor_data')
+                .then(response => response.json())
+                .then(data => {
+                    let value = data.sensor_value;
+                    document.getElementById('sensorValue').innerText = value;
+
+                    // Ajoute les nouvelles valeurs au graphique
+                    let now = new Date().toLocaleTimeString();
+                    sensorChart.data.labels.push(now);
+                    sensorChart.data.datasets[0].data.push(value);
+
+                    // Garde les 10 dernières valeurs
+                    if (sensorChart.data.labels.length > 10) {
+                        sensorChart.data.labels.shift();
+                        sensorChart.data.datasets[0].data.shift();
+                    }
+
+                    sensorChart.update();
+                });
+        }
+
+        // Met à jour toutes les secondes
+        setInterval(fetchSensorData, 2000);
+    </script>
+</body>
+</html>
