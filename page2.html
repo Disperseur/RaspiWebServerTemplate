@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page 2 - LED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - LED State</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>État de la LED</h1>
-    <p>LED : {{led_state}}</p>
-    <button onclick="toggleLED()">Basculer LED</button>
-    <a href="page1.html"><button>Retour page capteur</button></a>
-    <a href="page3.html"><button>Page graphique</button></a>
+    <h1>Page 2 - LED State</h1>
+    <button onclick="window.location.href='page1.html'">Page 1</button>
+    <button onclick="window.location.href='page2.html'">Page 2</button>
+    <button onclick="window.location.href='page3.html'">Page 3</button>
+
+    <div id="ledState">{{led_state}}</div>
+    <button onclick="toggleLED()">Toggle LED</button>
 
     <script>
-        function toggleLED() { 
-            fetch('/toggle_led').then(() => location.reload()); 
+        function toggleLED() {
+            fetch('/toggle_led')
+                .then(response => {
+                    if (response.ok) {
+                        window.location.reload();
+                    } else {
+                        console.error('Error toggling LED');
+                    }
+                })
+                .catch(error => console.error('Error toggling LED:', error));
         }
     </script>
 </body>

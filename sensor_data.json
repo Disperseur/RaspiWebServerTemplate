@@ -1,0 +1,626 @@
+[
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 23
+	},
+	{
+		"sensor_value" : 18
+	},
+	{
+		"sensor_value" : 45
+	},
+	{
+		"sensor_value" : 46
+	},
+	{
+		"sensor_value" : 51
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 55
+	},
+	{
+		"sensor_value" : 79
+	},
+	{
+		"sensor_value" : 88
+	},
+	{
+		"sensor_value" : 64
+	},
+	{
+		"sensor_value" : 28
+	},
+	{
+		"sensor_value" : 41
+	},
+	{
+		"sensor_value" : 50
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 0
+	},
+	{
+		"sensor_value" : 34
+	},
+	{
+		"sensor_value" : 64
+	},
+	{
+		"sensor_value" : 24
+	},
+	{
+		"sensor_value" : 14
+	},
+	{
+		"sensor_value" : 87
+	},
+	{
+		"sensor_value" : 56
+	},
+	{
+		"sensor_value" : 43
+	},
+	{
+		"sensor_value" : 91
+	},
+	{
+		"sensor_value" : 27
+	},
+	{
+		"sensor_value" : 65
+	},
+	{
+		"sensor_value" : 59
+	},
+	{
+		"sensor_value" : 36
+	},
+	{
+		"sensor_value" : 32
+	},
+	{
+		"sensor_value" : 51
+	},
+	{
+		"sensor_value" : 37
+	},
+	{
+		"sensor_value" : 28
+	},
+	{
+		"sensor_value" : 75
+	},
+	{
+		"sensor_value" : 7
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 77
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 92
+	},
+	{
+		"sensor_value" : 49
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 27
+	},
+	{
+		"sensor_value" : 90
+	},
+	{
+		"sensor_value" : 59
+	},
+	{
+		"sensor_value" : 63
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 40
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 72
+	},
+	{
+		"sensor_value" : 36
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 68
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 82
+	},
+	{
+		"sensor_value" : 30
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 23
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 2
+	},
+	{
+		"sensor_value" : 22
+	},
+	{
+		"sensor_value" : 58
+	},
+	{
+		"sensor_value" : 69
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 56
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 42
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 92
+	},
+	{
+		"sensor_value" : 49
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 27
+	},
+	{
+		"sensor_value" : 90
+	},
+	{
+		"sensor_value" : 59
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 40
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 72
+	},
+	{
+		"sensor_value" : 36
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 68
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 82
+	},
+	{
+		"sensor_value" : 30
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 23
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 77
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 49
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 77
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 92
+	},
+	{
+		"sensor_value" : 49
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 27
+	},
+	{
+		"sensor_value" : 90
+	},
+	{
+		"sensor_value" : 59
+	},
+	{
+		"sensor_value" : 63
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 40
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 72
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 68
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 82
+	},
+	{
+		"sensor_value" : 30
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 23
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 2
+	},
+	{
+		"sensor_value" : 22
+	},
+	{
+		"sensor_value" : 58
+	},
+	{
+		"sensor_value" : 69
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 56
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 42
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 73
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 19
+	},
+	{
+		"sensor_value" : 84
+	},
+	{
+		"sensor_value" : 37
+	},
+	{
+		"sensor_value" : 98
+	},
+	{
+		"sensor_value" : 24
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 70
+	},
+	{
+		"sensor_value" : 13
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 77
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 92
+	},
+	{
+		"sensor_value" : 49
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 77
+	},
+	{
+		"sensor_value" : 15
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 86
+	},
+	{
+		"sensor_value" : 92
+	},
+	{
+		"sensor_value" : 49
+	},
+	{
+		"sensor_value" : 21
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 27
+	},
+	{
+		"sensor_value" : 90
+	},
+	{
+		"sensor_value" : 59
+	},
+	{
+		"sensor_value" : 63
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 26
+	},
+	{
+		"sensor_value" : 72
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 68
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 82
+	},
+	{
+		"sensor_value" : 30
+	},
+	{
+		"sensor_value" : 62
+	},
+	{
+		"sensor_value" : 23
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 35
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 2
+	},
+	{
+		"sensor_value" : 22
+	},
+	{
+		"sensor_value" : 58
+	},
+	{
+		"sensor_value" : 69
+	},
+	{
+		"sensor_value" : 67
+	},
+	{
+		"sensor_value" : 93
+	},
+	{
+		"sensor_value" : 56
+	},
+	{
+		"sensor_value" : 11
+	},
+	{
+		"sensor_value" : 42
+	},
+	{
+		"sensor_value" : 29
+	},
+	{
+		"sensor_value" : 73
+	},
+	{
+		"sensor_value" : 19
+	},
+	{
+		"sensor_value" : 84
+	},
+	{
+		"sensor_value" : 37
+	},
+	{
+		"sensor_value" : 98
+	},
+	{
+		"sensor_value" : 24
+	},
+	{
+		"sensor_value" : 15
+	}
+]
